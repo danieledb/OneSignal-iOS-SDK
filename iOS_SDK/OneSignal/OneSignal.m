@@ -1263,8 +1263,8 @@ static Class delegateClass = nil;
     injectSelector(self.class, @selector(oneSignalApplicationWillResignActive:),
                    delegateClass, @selector(applicationWillResignActive:));
     
-    injectSelector(self.class, @selector(oneSignalApplicationDidBecomeActive:),
-                   delegateClass, @selector(applicationDidBecomeActive:));
+    //injectSelector(self.class, @selector(oneSignalApplicationDidBecomeActive:),
+    //               delegateClass, @selector(applicationDidBecomeActive:));
     
     
     [self setOneSignalDelegate:delegate];
